@@ -1,0 +1,18 @@
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          # 指定使用 qwen2.5:7b-instruct 模型
+          model: qwen2.5:7b-instruct
+          temperature: 0.7
+          num-predict: 2048
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+
